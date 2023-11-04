@@ -1,5 +1,5 @@
 "use strict";
-class Instagram {
+class Insta {
     constructor(cameraMode, filter, burst) {
         this.cameraMode = cameraMode;
         this.filter = filter;

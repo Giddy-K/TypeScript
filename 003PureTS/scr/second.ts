@@ -1,4 +1,4 @@
-interface TakePhoto {
+interface Take {
     cameraMode: string
     filter: string
     burst: number
@@ -8,7 +8,7 @@ interface Story {
     createStory(): void
 }
 
-class Instagram implements TakePhoto {
+class Insta implements Take {
     constructor(
         public cameraMode: string,
         public filter: string,
@@ -16,7 +16,7 @@ class Instagram implements TakePhoto {
     ){}
 }
 
-class Youtube implements TakePhoto{
+class Youtube implements Take{
     constructor(
         public cameraMode: string,
         public filter: string,
