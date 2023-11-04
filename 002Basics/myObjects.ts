@@ -14,16 +14,45 @@
 //     return { name: "ICT", price: 12000 }
 // }
 
+// type User = {
+//     name: string;
+//     isActive: boolean;
+//     email: string;
+// }
+
+// function createUser(user: User) {
+//     return { name: "", email: "", isActive: true }
+// }
+
+// createUser({ name: "", email: "", isActive: true })
+
+
 type User = {
+    readonly _id: string;
     name: string;
-    isActive: boolean;
     email: string;
+    isActive: boolean
+    creditCardDetails?: number;
 }
 
-function createUser(user: User) {
-    return { name: "", email: "", isActive: true }
+let myUser: User = {
+    _id: "123456789",
+    name: "John Doe",
+    email: "johndoe@example.com",
+    isActive: true,
 }
 
-createUser({ name: "", email: "", isActive: true })
+type cardNumber = {
+    cardNumber: string;
+}
 
-export { }
+type cardDate = {
+    cardDate: string;
+}
+
+type creditCardDetails = cardNumber & cardDate & {
+    cvv: number//hacky way
+}
+
+myUser.email = "ld@example.com";
+//myUser._id = "123456789"

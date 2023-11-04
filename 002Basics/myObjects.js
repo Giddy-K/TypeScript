@@ -1,11 +1,13 @@
-"use strict";
 // const User = {
 //     name: 'John',
 //     email: 'john@gmail.com',
 //     isActive: true
 // }
-Object.defineProperty(exports, "__esModule", { value: true });
-function createUser(user) {
-    return { name: "", email: "", isActive: true };
-}
-createUser({ name: "", email: "", isActive: true });
+var myUser = {
+    _id: "123456789",
+    name: "John Doe",
+    email: "johndoe@example.com",
+    isActive: true,
+};
+myUser.email = "ld@example.com";
+//myUser._id = "123456789"
