@@ -36,6 +36,15 @@ class User {
         this._courseCount = courseNum;
     }
 }
+class SubUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCouresCount() {
+        this._courseCount = 4;
+    }
+}
 const SuperUser = new User("superuser@example.com", "SuperUser", "12345");
 // SuperUser.city = "Nairobi" //!!READ-ONLY!!
 //SuperUser.name //!private
