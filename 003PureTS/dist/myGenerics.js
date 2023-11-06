@@ -26,3 +26,18 @@ const getMoreSearchProducts = (products) => {
     const myIndex = 4;
     return products[myIndex];
 };
+//Using Type Parameters in Generic
+function anotherFunction(valOne, valTwo) {
+    return {
+        valOne,
+        valTwo
+    };
+}
+class Syllabus {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(product) {
+        this.cart.push(product);
+    }
+}
